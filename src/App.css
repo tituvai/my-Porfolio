@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+
+body{
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+@theme {
+  --font-chakra: "Chakra Petch", sans-serif; 
+  --font-open: "Open Sans", sans-serif; 
+  --font-paprika: "Paprika", system-ui; 
+}
+ 
