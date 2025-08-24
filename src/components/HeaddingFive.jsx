@@ -1,9 +1,9 @@
 import React from 'react'
 
-const HeaddingFive = () => {
+const HeaddingFive = ({className, textFive}) => {
   return (
     <>
-    <h5 className={`text-3xl font-chakra font-bold leading-9`}>{textFive}</h5>
+    <h5 className={`text-3xl font-chakra font-bold leading-9 ${className}`}>{textFive}</h5>
     </>
   )
 }
