@@ -105,19 +105,19 @@ const Header = () => {
            initial={{opacity: 0, scale: 0.5}}
            animate={{opacity: 1, scale: 1}}
            transition={{delay: 1.3, duration: 0.8}}
-           ><Link to={'/'}><FiGithub className='text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 w-5 h-5'/></Link>
+           ><Link to={'/'}><FiGithub className='text-gray-300 hover:text-green-600 transition-colors duration-300 w-5 h-5'/></Link>
            </motion.span>
            <motion.span 
            initial={{opacity: 0, scale: 0.5}}
            animate={{opacity: 1, scale: 1}}
            transition={{delay: 1.3, duration: 0.8}}
-           ><Link to={'/'}>< FiTwitter className='text-gray-300  hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 w-5 h-5'/></Link>
+           ><Link to={'/'}>< FiTwitter className='text-gray-300  hover:text-green-600 transition-colors duration-300 w-5 h-5'/></Link>
            </motion.span>
            <motion.span 
            initial={{opacity: 0, scale: 0.5}}
            animate={{opacity: 1, scale: 1}}
            transition={{delay: 1.3, duration: 0.8}}
-           ><Link to={'/'}>< FiLinkedin className='text-gray-300  hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300 w-5 h-5'/></Link>
+           ><Link to={'/'}>< FiLinkedin className='text-gray-300  hover:text-green-600 transition-colors duration-300 w-5 h-5'/></Link>
            </motion.span>
 
                 <motion.button
@@ -131,7 +131,7 @@ const Header = () => {
             stiffness: 100,
             damping: 15
            }}
-           className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 font-bold font-open hover:from-green-500 hover:to-green-300 hover:text-white transition-all duration-500'>Hire Me</motion.button>
+           className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-green-500 font-bold font-open hover:from-green-500 hover:to-green-300 hover:text-white transition-all duration-500'>Hire Me</motion.button>
            </div>
            {/* Desktop Social icon Part End */}
 
@@ -179,7 +179,7 @@ const Header = () => {
               <Link to={'/'}><FiLinkedin className='h-5 w-5 text-gray-300'/></Link>
             </div>
           </div>
-          <button onClick={()=>{toggleMenu(), openContactForm() }} className='mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold'>Contact Me</button>
+          <button onClick={()=>{toggleMenu(), openContactForm() }} className='mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-green-600 to-green-400 font-bold'>Contact Me</button>
         </motion.div>
 
         {/* contact Form Part Start  */}
@@ -195,7 +195,7 @@ const Header = () => {
 
             <motion.div
             initial={{scale: 0.8, opacity:0, y:300}}
-            animate={{scale: 1, opacity: 1, y:0}}
+            animate={{scale: 1, opacity: 1, y:200}}
             exit={{scale: 0.8, opacity: 0, y:30}}
             transition={{
               type: "spring",
@@ -205,7 +205,7 @@ const Header = () => {
             }}
             className="bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6">
           <div className="flex justify-between items-center mb-4">
-            <h2 className='text-2xl font-bold text-gray-300'>Get In Touch</h2>
+            <h2 className='text-2xl font-bold text-gray-800'>Get In Touch</h2>
             <button onClick={closeContactForm}><FiX className="w-5 h-5 text-gray-300 font-extrabold"/></button>
           </div>
 
@@ -213,16 +213,16 @@ const Header = () => {
 
         <form className='gap-y-4'>
           <div className="">
-            <label htmlFor="name" className='text-sm font-medium text-gray-300 mb-1'>Name</label>
-            <input id='name' type="text" placeholder='Your Name' className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
+            <label htmlFor="name" className='text-sm font-normal font-open text-black mb-1'>Name</label>
+            <input id='name' type="text" placeholder='Your Name' className='w-full px-4 py-2 border placeholder:text-sm  border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
           </div>
           <div className="">
-            <label htmlFor="email" className='text-sm font-medium text-gray-300 mb-1'>Email</label>
-            <input id='email' type="Email" placeholder='Your Email' className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
+            <label htmlFor="email" className='text-sm font-normal font-open text-black mb-1'>Email</label>
+            <input id='email' type="Email" placeholder='Your Email' className='w-full px-4 py-2 border placeholder:text-sm  border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
           </div>
           <div className="">
-            <label htmlFor="message" className='text-sm font-medium text-gray-300 mb-1'>Message</label>
-            <textarea id='message' rows={'4'} placeholder='How can help you' className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
+            <label htmlFor="message" className='text-sm font-normal font-open text-black mb-1'>Message</label>
+            <textarea id='message' rows={'4'} placeholder='How can help you' className='w-full px-4 py-2  placeholder:text-sm border border-gray-600 rounded-lg focus:ring-violet-500 focus:border-violet-500 bg-gray-700' />
           </div>
           <motion.button type='submit'
           whileHover={{scale: 1.03}}

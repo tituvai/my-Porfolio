@@ -56,7 +56,7 @@ const About = () => {
                             <Peragrap peraText={'Ibcs Primax Softwear Bangladash ltd'}/>
                         </div>
                     </div>
-                        <div className="lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Front-End Developer'}/>
                         <div className="flex items-center gap-x-3">

@@ -54,7 +54,7 @@ const Contact = () => {
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Service'/>
                                 </div>
                                 <div className="w-full lg:w-[48%]">
-                                <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Lest Name'/>
+                                <input className='hidden lg:block w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Lest Name'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Phone'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Country'/>
                                 </div>
