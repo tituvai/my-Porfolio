@@ -42,11 +42,11 @@ const Project = () => {
   };
   return (
     <>
-       <div className="">
+       <div>
          <div className="container mx-auto px-4 lg:px-8">
             <HeaddingThree className={'text-center'} textThree={<><span>My Pro</span><span className='text-green-500'>ject</span></>}/>
-            <Flex className={'py-10 justify-between'}>
-                <div className="w-[30%] bg-white p-3 rounded">
+            <Flex className={'py-10 justify-between flex-col md:flex-row gap-y-5'}>
+                <div className="lg:w-[30%] bg-white p-3 rounded">
                     <div  ref={scrollRef1} className=" h-[400px]  overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef1)}  onMouseLeave={()=> handleMouseLeave(scrollRef1)}>
                     <Image className={''} imgSrc={projectOne}/>
                 </div>
@@ -55,7 +55,7 @@ const Project = () => {
                         <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
                     </div>
                 </div>
-                <div className="w-[30%] bg-white p-3 rounded">
+                <div className="lg:w-[30%] bg-white p-3 rounded">
                     <div  ref={scrollRef2} className=" h-[400px]  overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef2)}  onMouseLeave={()=> handleMouseLeave(scrollRef2)}>
                     <Image className={''} imgSrc={projectOne}/>
                 </div>
@@ -64,7 +64,7 @@ const Project = () => {
                         <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
                     </div>
                 </div>
-                <div className="w-[30%] bg-white p-3 rounded">
+                <div className="lg:w-[30%] bg-white p-3 rounded">
                     <div  ref={scrollRef3} className=" h-[400px]  overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef3)}  onMouseLeave={()=> handleMouseLeave(scrollRef3)}>
                     <Image className={''} imgSrc={projectOne}/>
                 </div>

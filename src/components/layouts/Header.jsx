@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Flex from '../Flex'
 import{motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FiGithub,  FiTwitter,  FiLinkedin, FiMenu , FiX} from "react-icons/fi";
+
 
 
 const Header = () => {
@@ -25,9 +26,33 @@ const Header = () => {
     setContactFormOpen(false)
   }
   // Contact Form Part End
+
+// Menu Scroll Part Start 
+
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+  
   return (
     <>
-        <header className='w-full z-50 transition-all duration-300'>
+        <header className={`fixed top-0 left-0 w-full  z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0 bg-black' : '-translate-y-full bg-gray-800'}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
            <motion.div 
              initial={{opacity: 0, x: -100}}
@@ -49,8 +74,14 @@ const Header = () => {
            {/* Desktop Navigation Part Start */}
 
            <div className="lg:flex hidden gap-x-10">
-            {['Home', 'About', 'Projects', 'Experience', 'Contact'].map((item, index)=>(
+            {[
+              {name:'Home', id:"home"},
+              {name:'About', id:"about"},
+              {name:'Projects', id:"project"},
+              {name:'Contact', id:"contact"}
+              ].map((item, index)=>(
               <motion.span initial={{ opacity: 0, y: -20 }}
+              key={item.id}
                 animate={{opacity: 1, y: 0}}
                 transition={{
                 type:'spring',
@@ -58,10 +89,10 @@ const Header = () => {
                 damping: 20,
                 delay: 0.7 + index * 0.2,
               }}>
-                <Link to={'/'} key={index} className="relative text-gray-200 dark:text-gray-200 hover:text-green-500 dark:hover:text-violet-400 font-medium font-open transition-colors duration-300 group">
-                {item}
+                <a href={`#${item.id}`} className="relative text-gray-200 dark:text-gray-200 hover:text-green-500 dark:hover:text-violet-400 font-medium font-open transition-colors duration-300 group">
+                {item.name}
                 <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300'></span>
-              </Link>
+              </a>
               </motion.span>
             ))}
            </div>

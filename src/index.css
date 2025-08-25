@@ -1,4 +1,7 @@
 
+html{
+  scroll-behavior: smooth;
+}
 
 /* স্ক্রলবার লুকানোর জন্য */
 .hide-scrollbar::-webkit-scrollbar {

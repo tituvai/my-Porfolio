@@ -22,11 +22,11 @@ const About = () => {
         
     }
   return (
-    <div className="">
+    <div>
         <div className="container mx-auto px-4 lg:px-8">
             <HeaddingThree className={'text-center'} textThree={<><span>About</span> <span className='text-green-500'>Me</span></>}/>
-            <div className={'flex justify-between py-20'}>
-                <div className="w-[30%]">
+            <div className={'lg:flex justify-between py-20'}>
+                <div className="lg:w-[30%]">
                 <HeaddingThree textThree={'Why hire me?'}/>
                     <Peragrap className={'py-6'} peraText={"I'm passionate about Web development  and I bring a creative touch through graphic design."}/>
                     <Button onClick={()=> heandleExperience('experience')} value={selectedButton === 'experience'}  className={'w-full mt-4'} btnText={'Experience'}/>
@@ -36,11 +36,11 @@ const About = () => {
                 </div>
                 {/* Experiens Part Start  */}
 
-               {selectedButton ==='experience' && <div className="w-[65%]">
-                    <HeaddingFive textFive={'My Experince'}/>
+               {selectedButton ==='experience' && <div className="lg:w-[65%]">
+                    <HeaddingFive className={'pt-8 lg:pt-0'} textFive={'My Experince'}/>
                     <Peragrap className={'pt-5'} peraText={'With experience in web development I’ve worked on Various projects, delivering high-quality, responsive websites that effectively meet client needs and exceed expectations.'}/>
-                    <Flex className={'justify-between flex-wrap pt-8 gap-y-5'}>
-                        <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <Flex className={'justify-between flex-col md:flex-row flex-wrap pt-8 gap-y-5'}>
+                        <div className="lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Mern Stack Developer'}/>
                         <div className="flex items-center gap-x-3">
@@ -48,7 +48,7 @@ const About = () => {
                             <Peragrap peraText={'Creative It institute'}/>
                         </div>
                     </div>
-                    <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <div className="lg:w-[48%] bg-stone-900 rounded-md p-4 lg:p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2024-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Web Developer Intern.'}/>
                         <div className="flex items-center gap-x-3">
@@ -56,7 +56,7 @@ const About = () => {
                             <Peragrap peraText={'Ibcs Primax Softwear Bangladash ltd'}/>
                         </div>
                     </div>
-                        <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Front-End Developer'}/>
                         <div className="flex items-center gap-x-3">
@@ -64,7 +64,7 @@ const About = () => {
                             <Peragrap peraText={'Online Course Platfrom.'}/>
                         </div>
                     </div>
-                    <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2024-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Ui/Ux Design'}/>
                         <div className="flex items-center gap-x-3">
@@ -79,11 +79,11 @@ const About = () => {
 
                 {/* Education Part Start  */}
 
-                {selectedButton==='education' && <div className="w-[65%]">
-                    <HeaddingFive textFive={'My Education'}/>
+                {selectedButton==='education' && <div className="lg:w-[65%]">
+                    <HeaddingFive className={'pt-8 lg:pt-0'} textFive={'My Education'}/>
                     <Peragrap className={'pt-5'} peraText={"Studied web development and design at top institutes, receiving diplomas in Mern Stack, Front End Development, and Graphics Design while gaining practical skills and knowledge."}/>
                     <Flex className={'justify-between flex-wrap pt-8 gap-y-5 h-[400px] overflow-y-scroll py-5 hide-scrollbar'}>
-                        <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2020-2024'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Diploma in CSE.'}/>
                         <div className="flex items-center gap-x-3">
@@ -91,7 +91,7 @@ const About = () => {
                             <Peragrap peraText={'Habiganj Polytechnic Institute.'}/>
                         </div>
                     </div>
-                    <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2019-2020'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Secondary School Certificate.'}/>
                         <div className="flex items-center gap-x-3">
@@ -99,7 +99,7 @@ const About = () => {
                             <Peragrap peraText={'Habiganj Technical Institute.'}/>
                         </div>
                     </div>
-                        <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Mern Stack Developer'}/>
                         <div className="flex items-center gap-x-3">
@@ -107,7 +107,7 @@ const About = () => {
                             <Peragrap peraText={'Creative It institute'}/>
                         </div>
                     </div>
-                    <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2024-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Web Developer Intern.'}/>
                         <div className="flex items-center gap-x-3">
@@ -115,7 +115,7 @@ const About = () => {
                             <Peragrap peraText={'Ibcs Primax Softwear Bangladash ltd'}/>
                         </div>
                     </div>
-                        <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Front-End Developer'}/>
                         <div className="flex items-center gap-x-3">
@@ -123,7 +123,7 @@ const About = () => {
                             <Peragrap peraText={'Online Course Platfrom.'}/>
                         </div>
                     </div>
-                    <div className="w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                    <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2024-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Ui/Ux Design'}/>
                         <div className="flex items-center gap-x-3">
@@ -139,83 +139,83 @@ const About = () => {
 
                 {/* Skills Part Start  */}
 
-                {selectedButton=== 'skills' && <div className="w-[65%]">
-                    <HeaddingFive textFive={'My Skills'}/>
+                {selectedButton=== 'skills' && <div className="lg:w-[65%]">
+                    <HeaddingFive className={'pt-8 lg:pt-0'} textFive={'My Skills'}/>
                     <Peragrap className={'pt-5'} peraText={"I'm passionate about front-end development  and I bring a creative touch through graphic design . As a Front-End Web Developer & Graphics Designer."}/>
                     <Flex className={'justify-between flex-wrap pt-8 gap-y-5 h-[400px] overflow-y-scroll py-5 hide-scrollbar'}>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaHtml5 className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium '} text={'html 5'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaCss3Alt className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium '} text={'css 3'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <RiTailwindCssFill className='text-7xl group-hover:text-green-500'/>
                         <div className="w-[150px] text-center px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'tailwind css'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaBootstrap  className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'bootstrap'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <IoLogoJavascript className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'javaScript'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <SiJquery className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'jquery'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaReact className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'react'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <RiNextjsLine  className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'w-[100px] text-center text-xl text-green-500 font-open font-medium'} text={'next js'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaNodeJs className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'w-[100px] text-center text-xl text-green-500 font-open font-medium'} text={'node js'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <SiExpress className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'w-[100px] text-center text-xl text-green-500 font-open font-medium'} text={'express js'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <SiMongodb className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'mongoDB'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaGithub className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'github'} as={'h6'}/>
                         </div>
                     </div>
-                        <div className="w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
+                        <div className="w-[30%] lg:w-[22%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500 flex items-center justify-center relative group">
                         <FaFigma className='text-7xl group-hover:text-green-500'/>
                         <div className=" px-3 py-1 rounded bg-white text-green-500 absolute -top-5 left-1/2 -translate-x-1/2  transition-all duration-500 scale-0 group-hover:scale-100">
                             <Hadding className={'text-xl text-green-500 font-open font-medium'} text={'figma'} as={'h6'}/>
@@ -228,8 +228,8 @@ const About = () => {
                 {/* Skills Part End */}
                     {/* About me Part Start  */}
 
-                   {selectedButton==='aboutMe' && <div className="w-[65%]">
-                    <HeaddingFive textFive={'About Me'}/>
+                   {selectedButton==='aboutMe' && <div className="lg:w-[65%]">
+                    <HeaddingFive className={'pt-8 lg:pt-0'} textFive={'About Me'}/>
                     <Peragrap className={'pt-5'} peraText={"I'm a passionate front-end web developer with a creative flair for graphic design. I specialize in building responsive, user-friendly websites that turn ideas into engaging digital experiences."}/>
                     <Flex className={'justify-between py-10'}>
                         <div className="">
