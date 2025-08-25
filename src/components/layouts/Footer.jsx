@@ -13,9 +13,9 @@ const Footer = () => {
                     <Peragrap peraText={'titu sarkar © 2025'}/>
                 </div>
                 <div className="flex items-center gap-x-3 lg:gap-x-8">
-                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'/'}><FaLinkedinIn/></Link></div>
-                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'/'}><FaGithub/></Link></div>
-                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'/'}><FaFacebookF/></Link></div>
+                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'https://www.linkedin.com/in/titu-sarkar-464878322'} target="_blank"><FaLinkedinIn/></Link></div>
+                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'https://github.com/tituvai'} target="_blank"><FaGithub/></Link></div>
+                    <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'https://www.facebook.com/share/1Z2AuyAcnE/'} target="_blank"><FaFacebookF/></Link></div>
                     <div className="w-[40px] h-[40px] text-green-500 hover:bg-green-500 hover:text-white rounded-full border-2 border-green-500 flex justify-center items-center transition-all duration-300"><Link to={'/'}><FaWhatsapp /></Link></div>  
                 </div>
             </Flex>
