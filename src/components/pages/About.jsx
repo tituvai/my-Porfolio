@@ -40,7 +40,7 @@ const About = () => {
                     <HeaddingFive className={'pt-8 lg:pt-0'} textFive={'My Experince'}/>
                     <Peragrap className={'pt-5'} peraText={'With experience in web development I’ve worked on Various projects, delivering high-quality, responsive websites that effectively meet client needs and exceed expectations.'}/>
                     <Flex className={'justify-between flex-col md:flex-row flex-wrap pt-8 gap-y-5'}>
-                        <div className="lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
+                        <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2025-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Mern Stack Developer'}/>
                         <div className="flex items-center gap-x-3">
@@ -48,7 +48,7 @@ const About = () => {
                             <Peragrap peraText={'Creative It institute'}/>
                         </div>
                     </div>
-                    <div className="lg:w-[48%] bg-stone-900 rounded-md p-4 lg:p-5 hover:border-1 hover:border-green-500">
+                    <div className="w-full lg:w-[48%] bg-stone-900 rounded-md p-4 lg:p-5 hover:border-1 hover:border-green-500">
                         <Hadding className={'text-sm font-open text-green-500'} text={'2024-Present'} as={'h6'}/>
                         <HeaddingFive className={'py-4'} textFive={'Web Developer Intern.'}/>
                         <div className="flex items-center gap-x-3">

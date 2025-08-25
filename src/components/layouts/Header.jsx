@@ -157,12 +157,17 @@ const Header = () => {
         transition={{duration: 0.5}}
         className="md:hidden overflow-hidden bg-gray-900 dark:bg-white shadow-lg px-4 py-5 gap-y-5">
           <div className="flex flex-col gap-y-3">
-            {['Home', 'About', 'Projects', 'Experience', 'Contact'].map((item, index)=>(
-              <span>
-                <Link onClick={toggleMenu} to={'/'} key={index} className="text-gray-300 py-2 font-medium ">
-                {item}
+            {[
+              {name:'Home', id:"home"},
+              {name:'About', id:"about"},
+              {name:'Projects', id:"project"},
+              {name:'Contact', id:"contact"}
+            ].map((item, index)=>(
+              <span key={item.id}>
+                <a onClick={toggleMenu} href={`#${item.id}`} className="text-gray-300 py-2 font-medium ">
+                {item.name}
                 <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full transition-all duration-300'></span>
-              </Link>
+              </a>
               </span>
             ))}
           </div>

@@ -43,17 +43,17 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-[65%] bg-stone-900 py-5 px-2 lg:px-8 mt-5 lg:mt-0">
+                    <div className="w-full lg:w-[65%] bg-stone-900 py-5 px-8 mt-5 lg:mt-0">
                         <Hadding className={'text-2xl lg:text-[40px] text-green-500 font-open font-medium lg:leading-15'} text={"Let's work together"} as={'h6'}/>
                         <Peragrap className={'py-5'} peraText={'Let’s collaborate to bring your vision to life. I craft dynamic, user-focused designs that make an impact and deliver exceptional results.'}/>
                         <form action="#">
-                            <div className="flex justify-between">
-                                <div className="w-[48%]">
+                            <div className="flex justify-between flex-col md:flex-row">
+                                <div className="w-full lg:w-[48%]">
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Frist Name'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Email'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Service'/>
                                 </div>
-                                <div className="w-[48%]">
+                                <div className="w-full lg:w-[48%]">
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Lest Name'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Phone'/>
                                 <input className='w-full p-3 bg-black mt-4 outline-0 placeholder:text-white placeholder:text-sm' type="text" placeholder='Country'/>
