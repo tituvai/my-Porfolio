@@ -5,7 +5,7 @@ import Peragrap from '../Peragrap'
 import Button from '../Button'
 import { FaFileDownload } from "react-icons/fa";
 import Image from '../Image'
-import titu from '/src/assets/tituC.png'
+import titu from '/src/assets/titu.png'
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
                 </div> 
                <div className="lg:w-[48%]">
                   <div className="w-full flex justify-center lg:justify-end pb-5 lg:pb-0">
-                      <Image className={'w-[70%] h-[70%]'} imgSrc={titu} imgAlt={'titu.png'}/>
+                      <Image className={'w-[70%] h-[70%] rounded-full'} imgSrc={titu} imgAlt={'titu.png'}/>
                   </div>
                 </div> 
             </Flex>

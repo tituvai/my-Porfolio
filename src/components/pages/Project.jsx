@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import HeaddingThree from '/src/components/HeaddingThree'
 import Flex from '../Flex'
 import Image from '../Image'
-import projectOne from '/src/assets/figmaOne.png'
-import uomo from '/src/assets/uomo.png'
 import nogo from '/src/assets/nogo.png'
+import dinrat from '/src/assets/dinratnews.png'
+import uomo from '/src/assets/uomo.png'
 import Hadding from '../Hadding'
 import { Link } from 'react-router-dom'
 
@@ -50,28 +50,31 @@ const Project = () => {
             <Flex className={'py-10 justify-between flex-col md:flex-row gap-y-5 gap-x-3'}>
                 <div className="w-full lg:w-[32%] bg-white p-3 rounded">
                     <div  ref={scrollRef1} className=" h-[400px]  overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef1)}  onMouseLeave={()=> handleMouseLeave(scrollRef1)}>
-                    <Image className={''} imgSrc={uomo} imgAlt={'uomo.png'}/>
+                    <Image className={''} imgSrc={dinrat} imgAlt={'dinratnews.png'}/>
                 </div>
                     <div className="pt-3">
-                        <Link to={'/'}><span className={'text-blue-500 font-chakra font-bold'}>Live Preview</span></Link>
-                        <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
+                          <a href="https://dinratnews.net" target="_blank" rel="noopener noreferrer"
+                            className="text-blue-500 font-chakra font-bold" > Live Preview </a>
+                        <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'Next.js, Tailwind css, Express.js, Mongodb'} as={'h6'}/>
                     </div>
                 </div>
                 <div className="w-full lg:w-[32%] bg-white p-3 rounded">
                     <div  ref={scrollRef2} className=" h-[400px] overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef2)}  onMouseLeave={()=> handleMouseLeave(scrollRef2)}>
-                    <Image className={''} imgSrc={nogo} imgAlt={'nogo.png'}/>
+                    <Image className={''} imgSrc={uomo} imgAlt={'uomo.png'}/>
                 </div>
                     <div className="pt-3">
-                        <Link to={'/'}><span className={'text-blue-500 font-chakra font-bold'}>Live Preview</span></Link>
+                      <a href="https://uomo-eight.vercel.app" target="_blank" rel="noopener noreferrer"
+                            className="text-blue-500 font-chakra font-bold" > Live Preview </a>
                         <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
                     </div>
                 </div>
                 <div className="w-full lg:w-[32%] bg-white p-3 rounded">
                     <div  ref={scrollRef3} className=" h-[400px] overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef3)}  onMouseLeave={()=> handleMouseLeave(scrollRef3)}>
-                    <Image className={''} imgSrc={projectOne} imgAlt={'figmaOne.png'}/>
+                    <Image className={''} imgSrc={nogo} imgAlt={'nogo.png'}/>
                 </div>
                     <div className="pt-3">
-                        <Link to={'/'}><span className={'text-blue-500 font-chakra font-bold'}>Live Preview</span></Link>
+                      <a href="https://ngoo-wine.vercel.app" target="_blank" rel="noopener noreferrer"
+                            className="text-blue-500 font-chakra font-bold" > Live Preview </a>
                         <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
                     </div>
                 </div>
