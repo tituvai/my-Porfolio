@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import HeaddingThree from '/src/components/HeaddingThree'
 import Flex from '../Flex'
 import Image from '../Image'
-import nogo from '/src/assets/nogo.png'
+import maltivendor from '/src/assets/maltivendor.png'
 import dinrat from '/src/assets/dinratnews.png'
 import uomo from '/src/assets/uomo.png'
 import Hadding from '../Hadding'
@@ -70,12 +70,12 @@ const Project = () => {
                 </div>
                 <div className="w-full lg:w-[32%] bg-white p-3 rounded">
                     <div  ref={scrollRef3} className=" h-[400px] overflow-y-scroll group hide-scrollbar"  onMouseEnter={()=> handleMouseEnter(scrollRef3)}  onMouseLeave={()=> handleMouseLeave(scrollRef3)}>
-                    <Image className={''} imgSrc={nogo} imgAlt={'nogo.png'}/>
+                    <Image className={''} imgSrc={maltivendor} imgAlt={'maltivendor.png'}/>
                 </div>
                     <div className="pt-3">
-                      <a href="https://ngoo-wine.vercel.app" target="_blank" rel="noopener noreferrer"
+                      <a href="https://multivendor-three-phi.vercel.app" target="_blank" rel="noopener noreferrer"
                             className="text-blue-500 font-chakra font-bold" > Live Preview </a>
-                        <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'React, Tailwind css, JavaScript'} as={'h6'}/>
+                        <Hadding className={'text-sm text-green-500 font-open font-medium py-2'} text={'Next.js, Tailwind Css, Express.js, Mongodb'} as={'h6'}/>
                     </div>
                 </div>
 
